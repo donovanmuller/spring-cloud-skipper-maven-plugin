@@ -1,0 +1,11 @@
+apiVersion: skipper.spring.io/v1
+kind: SkipperPackageMetadata
+name: ${project.artifactId}
+displayName: ${project.name}
+version: ${project.version}
+packageSourceUrl: ${skipper.package.source.url}
+packageHomeUrl: ${skipper.package.home.url}
+tags: ${skipper.tags}
+maintainer: ${skipper.maintainer}
+description: ${project.description}
+iconUrl: ${skipper.iconUrl}

@@ -1,0 +1,15 @@
+apiVersion: skipper.spring.io/v1
+kind: SpringCloudDeployerApplication
+metadata:
+  name: ${project.artifactId}
+spec:
+  resource: maven://${project.groupId}:${project.artifactId}:{{version}}
+  version: {{version}}
+  applicationProperties:
+    {{#spec.applicationProperties.entrySet}}
+    {{key}}: {{value}}
+    {{/spec.applicationProperties.entrySet}}
+  deploymentProperties:
+    {{#spec.deploymentProperties.entrySet}}
+    {{key}}: {{value}}
+    {{/spec.deploymentProperties.entrySet}}
