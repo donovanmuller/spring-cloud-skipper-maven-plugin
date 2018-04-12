@@ -26,10 +26,10 @@ src/main/resources/skipper $ tree
 
 ## Goals Overview
 
-The Spring Cloud Data Flow Maven Plugin has the following goals.
+The Spring Cloud Skipper Maven Plugin has the following goals.
 
-* [skipper-package](#creating-a-skipper-package) deploys a standalone application with Spring Cloud Data Flow
-* [skipper-upload](#) deploys an Application Group Descriptor project with Spring Cloud Data Flow
+* [skipper-package](#creating-a-skipper-package) creates a Spring Cloud Skipper compliant package
+* [skipper-upload](#) uploads Spring Cloud Skipper package to a Skipper repository
 
 ## Usage
 
